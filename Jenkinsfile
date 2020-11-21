@@ -39,10 +39,11 @@ pipeline {
             }
         }
         stage('Deploy To Production') {
+            when {
+                branch 'master' 
+            }
             steps {
-                when {
-                    branch 'master' 
-                }
+            
             }
         }
     }
