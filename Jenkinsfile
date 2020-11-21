@@ -43,7 +43,7 @@ pipeline {
                 branch 'master' 
             }
             steps {
-            
+                echo 'Prod'
             }
         }
     }
